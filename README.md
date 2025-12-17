@@ -85,4 +85,4 @@ Este projeto está disponível sob a licença **MIT** — veja o arquivo `LICENS
 
 ---
 
-Made with ❤️ by *Seu Nome ou Organização*
+Desenvolvido por ❤️ Ana Luiza  Oliveira | Desenvolvedora WEB
