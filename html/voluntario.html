@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seja um Voluntário</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="atuação.html">Atuação</a>
+        </li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticia.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+  <script src="../js/script.js"></script>
+
+  <header class="hero">
+    <img src="../img/Banner_Voluntário.png" alt="Seja um Voluntário" class="topo-img">
+  </header>
+
+  <main class="container">
+    <h1>Seja um voluntário Cáritas</h1>
+    <p class="intro">
+      É uma experiência para todos - independente de gênero, raça ou etnia - que permite conhecer novas realidades, se engajar em uma causa social, contribuir com suas habilidades, e até mesmo desenvolver novas competências.
+    </p>
+
+    <section class="cards">
+      <div class="card">
+        <img src="../img/volun_1.png" alt="Ícone" class="icon">
+        <h3>O que é ser voluntário(a)?</h3>
+        <p>É aquele(a) que doa seu tempo, seu conhecimento e suas habilidades em uma ação social que visa beneficiar as comunidades locais.</p>
+      </div>
+      <div class="card">
+        <img src="../img/volun_2.png" alt="Ícone" class="icon">
+        <h3>Quem pode aderir ao Programa?</h3>
+        <p>Pessoas com espírito solidário e o coração aberto a partilhas que tenham no mínimo 18 anos de idade.</p>
+      </div>
+      <div class="card">
+        <img src="../img/volun_3.png" alt="Ícone" class="icon">
+        <h3>Como se dá a relação com a Instituição?</h3>
+        <p>Será firmado um Termo de Adesão e serão cumpridos todos os termos previstos na Lei do Voluntariado (Lei nº 9.608 de 1998).</p>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <h2>Benefícios do Trabalho Voluntário</h2>
+      <ul>
+        <li>Desenvolvimento pessoal e profissional;</li>
+        <li>Descoberta de novas potencialidades;</li>
+        <li>Criação de novos círculos de amizades pessoais;</li>
+        <li>Participação na construção de realidades mais justas;</li>
+        <li>Comprovação de horas complementares para formação em nível de graduação.</li>
+      </ul>
+    </section>
+
+    <section class="oferecido">
+      <h2>O que pode ser oferecido</h2>
+      <p>– Oferecer seu tempo para serviços gerais (limpeza, bazares, transporte de doações, ajuda cozinha, divulgação de rifas e atividades...);</p>
+      <p>– Oferecer suas competências profissionais. Precisamos de oficineiros, eletricistas, técnicos de informática, advogados, psicólogos, fotógrafos, etc.</p>
+    </section>
+
+<section class="voluntarios-section">
+  <div class="voluntarios-container">
+    <div class="imagem-wrapper">
+      <img src="../img/voluntarios.png" alt="Voluntários segurando caixas" class="voluntarios-img-grande">
+      <a href="forms.html" class="botao-grande">Faça sua pré-inscrição</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    .topo-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    h2, h3 {
+      color: #F47A35;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 1rem;
+      margin: 20px 0 40px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      flex: 1 1 250px;
+      max-width: 280px;
+      text-align: center;
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    .benefits, .oferecido {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .voluntarios-section {
+  width: 100%;
+  padding: 60px 0 40px;
+  background-color: #fff;
+}
+
+.voluntarios-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.imagem-wrapper {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.voluntarios-img-grande {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.botao-grande {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45%;
+  background-color: #F47A35;
+  color: white;
+  padding: 18px 0;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.botao-grande:hover {
+  background-color: #e56821;
+}
+    @media (max-width: 768px) {
+  .botao-grande {
+    bottom: -20px;
+    font-size: 14px;
+    padding: 14px 24px;
+    width: 90%; /* aumenta a largura */
+    max-width: 300px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .voluntarios-img-grande {
+    margin-top: 20px;
+  }
+
+  .voluntarios-container {
+    padding: 0 10px 40px;
+  }
+  }
+  </style>
+
+</body>
+</html>

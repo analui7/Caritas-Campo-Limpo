@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossos Principios</title>
+  <link rel="stylesheet" href="../css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="atuação.html">Atuação</a>
+        </li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticia.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+    <script src="../js/script.js"></script>
+
+  <!--Corpo principios-->
+  <div class="banner">
+    <img  class="foto"  src="../img/nossosprincipios.png" alt="Princípios Norteadores">
+    <!-- renomeie a imagem para "banner.png" ou ajuste o caminho no src -->
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="container">
+    <div class="principles">
+
+      <div class="principle">
+        <div class="principle-content">
+          <h3>Parceria</h3>
+          <p>Garantimos trabalhar a partir de um compromisso comum a longo prazo, planejado e realizado na base de objetivos acordados e valores compartilhados. Nossos relacionamentos são baseados na boa vontade e corresponsabilidade, na transparência e no respeito mútuo, na sincera abertura e valorização do outro.</p>
+        </div>
+      </div>
+
+      <div class="principle">
+       
+        <div class="principle-content">
+          <h3>Gestão responsável</h3>
+          <p>Comprometemo-nos em administrar bem os recursos que nos foram confiados. Faremos todos os esforços possíveis para prestar contas àqueles a quem servimos...</p>
+        </div>
+      </div>
+
+      <div class="principle">
+         <div class="principle-content">
+          <h3>Subsidiariedade</h3>
+          <p>Garantimos que o poder, as decisões e a responsabilidade sejam confiados aos níveis mais baixos em que podem ser exercidos apropriadamente...</p>
+        </div>
+      </div>
+
+      <div class="principle">
+        <div class="principle-content">
+          <h3>Igualdade</h3>
+          <p>Garantimos o protagonismo das pessoas em situação de vulnerabilidade, risco e/ou exclusão social enquanto opção educativa em que o sujeito é o elemento central...</p>
+        </div>
+      </div>
+
+      <div class="principle">
+         <div class="principle-content">
+          <h3>Responsabilização</h3>
+          <p>Procuramos estimular a participação social na comunidade e na sociedade como forma de superar as recorrentes práticas assistencialistas promovidas pelo Estado...</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+   .titulop {
+  color: #f26522;
+  font-size: 32px;
+  font-weight: 600;
+}
+.foto{
+  width: 320px;
+}
+
+    .banner {
+      position: relative;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+            max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .principles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 50px 60px;
+    }
+
+    .principle {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .principle img.icon {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    .principle-content h3 {
+      margin: 0;
+      color: #f26522;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .principle-content p {
+      margin-top: 8px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+    @media (max-width: 600px) {
+      .principle-content h3 {
+        font-size: 18px;
+      }
+      .principle-content p {
+        font-size: 15px;
+      }
+    }
+  </style>
+<script src="../js/script.js"></script>
+</body>
+</html>

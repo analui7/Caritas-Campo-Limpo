@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Nossa Missão</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="atuação.html">Atuação</a>
+        </li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticia.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+    <script src="../js/script.js"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #3f3f3f;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .logo {
+      width: 160px;
+      margin-bottom: 20px;
+    }
+
+    .missao {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+
+    .faixa-laranja {
+      background-color: #F47A35;
+      color: white;
+      display: flex;
+      width: 100%;
+      height: 400px; /* altura igual da imagem */
+    }
+
+    .faixa-laranja .texto {
+      flex: 1 1 50%;
+      padding: 60px 40px;
+      font-size: 18px;
+      line-height: 1.7;
+      text-align: justify;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .faixa-laranja .imagem {
+      flex: 1 1 50%;
+      height: 100%;
+    }
+
+    .faixa-laranja .imagem img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .faixa-laranja {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .faixa-laranja .texto {
+        padding: 30px 20px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .faixa-laranja .imagem {
+        height: auto;
+      }
+
+      .faixa-laranja .imagem img {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="../img/Logo_Nossa Missão.png" alt="Logo Nossa Missão" class="logo">
+  </header>
+
+  <section class="missao">
+    “Testemunhar e anunciar o Evangelho de Jesus Cristo, defendendo e promovendo toda forma de vida e participando da construção solidária da sociedade do Bem Viver, sinal do Reino de Deus, junto com as pessoas em situação de vulnerabilidade e exclusão social.”
+  </section>
+
+  <section class="faixa-laranja">
+    <div class="texto">
+      Desde a sua fundação, a Cáritas tem a prática de ouvir respeitosamente o sofrimento dos empobrecidos e dos que estão em situação de vulnerabilidade e favorecer ferramentas para transformar suas vidas.
+    </div>
+    <div class="imagem">
+      <img src="../img/Missão_crianças.jpg" alt="Imagem de crianças sorrindo">
+    </div>
+  </section>
+</body>
+</html>

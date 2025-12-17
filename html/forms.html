@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Voluntariado</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+ <link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+ <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .espaco {
+      padding-top: 10%;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    /* Estilo exclusivo para o botão enviar */
+    .btn-enviar {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #f26522;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-enviar:hover {
+      background-color: #d9541a;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li><a href="atuação.html">Atuação</a></li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticias.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+  <script src="../js/script.js"></script>
+
+  <div class="espaco">
+    <div class="form-container">
+      <h2>Seja um Voluntário</h2>
+      <form action="https://formsubmit.co/voluntariado@caritascl.org.br" method="POST">
+        <input type="text" name="_honey" style="display:none">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required min="12">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="motivo">Por que quer ser voluntário?</label>
+        <textarea id="motivo" name="motivo" rows="5" required></textarea>
+
+        <!-- Proteção contra SPAM -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Redirecionar após envio -->
+        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+        <button class="btn-enviar" type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

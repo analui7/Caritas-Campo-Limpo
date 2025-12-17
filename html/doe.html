@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações Cáritas Campo Limpo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="atuação.html">Atuação</a>
+        </li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticia.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+    <script src="../js/script.js"></script>
+
+    
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #F47A35;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    p.description {
+      margin-bottom: 2rem;
+      color: #444;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff4ee;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      flex: 1 1 300px;
+      max-width: 340px;
+      text-align: center;
+      border-top: 6px solid #F47A35;
+    }
+
+    .card img {
+      width: 40px;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      color: #1c1c1c;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      margin: 5px 0;
+      color: #444;
+    }
+
+    .highlight {
+      color: #F47A35;
+      font-weight: 600;
+    }
+
+    .footer-card {
+      margin-top: 3rem;
+      background-color: #fff4ee;
+      padding: 2rem;
+      border-radius: 12px;
+      border-left: 8px solid #F47A35;
+    }
+
+    .footer-card p {
+      margin: 0.5rem 0;
+      color: #333;
+    }
+
+    .footer-card a {
+      color: #F47A35;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Depósito em conta</h2>
+    <p class="description">Caso queira realizar um depósito diretamente na conta da Cáritas Campo Limpo.</p>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1090/1090995.png" alt="Banco">
+        <h3>Banco: Itaú</h3>
+        <p>Agência: <span class="highlight">1634</span></p>
+        <p>Conta-corrente: <span class="highlight">58692-7</span></p>
+        <p>CNPJ: 64.003.061/0001-38</p>
+        <p>Cáritas Campo Limpo</p>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1090/1090995.png" alt="Banco">
+        <h3>Banco Santander</h3>
+        <p>Agência: <span class="highlight">0336</span></p>
+        <p>Conta-corrente: <span class="highlight">13 001509-1</span></p>
+        <p>CNPJ: 64.033.061/0001-38</p>
+        <p>Cáritas Campo Limpo</p>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1090/1090995.png" alt="PIX">
+        <h3>PIX</h3>
+        <p>Chave Pix:</p>
+        <p class="highlight">64.033.061/0001-38</p>
+      </div>
+    </div>
+
+    <div class="footer-card">
+      <h3>Recebimento de doações</h3>
+      <p><strong>CNPJ:</strong> 64.033.061/0001-38</p>
+      <p><strong>Endereço:</strong> Rua Serra da Esperança, Nº 190 – Jardim bom Refúgio – São Paulo – SP – CEP <a href="#">05788-370</a></p>
+      <p><strong>Telefones:</strong> <a href="tel:+551158413365">+55 11 5841-3365</a> / <a href="tel:+5511940802384">+55 11 9 4080-2384</a></p>
+      <p><strong>Email:</strong> <a href="mailto:caritas@caritascl.org.br">caritas@caritascl.org.br</a></p>
+      <p><strong>Atendimento:</strong> 8:00 às 17:00h</p>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

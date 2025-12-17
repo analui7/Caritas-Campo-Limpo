@@ -1,0 +1,527 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Cáritas Campo Limpo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logotipo_laranja.png" type="image/png">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+ 
+
+  <div class="sidebar" id="sidebar">
+    <ul class="menu">
+      <li>
+        <a href="#">A Cáritas</a>
+        <ul class="submenu">
+          <li><a href="html/historia.html">História</a></li>
+          <li><a href="html/missao.html">Missão</a></li>
+          <li><a href="html/valores.html">Valores</a></li>
+          <li><a href="html/principios.html">Princípios Norteadores</a></li>
+          <li><a href="html/caritasmundo.html">Cáritas mundo</a></li>
+          <li><a href="html/parceiros.html">Parceiros</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="html/atuação.html">Atuação</a>
+      </li>
+      <li>
+        <a href="#">Como Apoiar</a>
+        <ul class="submenu">
+          <li><a href="html/voluntario.html">Seja um voluntário</a></li>
+          <li><a href="html/nossascampanhas.html">Nossas campanhas</a></li>
+          <li><a href="html/basarcaritas.html">Bazar Cáritas</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Fique por Dentro</a>
+        <ul class="submenu">
+          <li><a href="admin/exibir_noticia.php">Notícias</a></li>
+          <li><a href="admin/exibir_editais.php">Editais e vagas</a></li>
+          <li><a href="html/transparencia.html">Transparência</a></li>
+        </ul>
+      </li>
+      <li><a href="html/contato.html">Contato</a></li>
+      <li><a href="html/doe.html">Doe</a></li>
+    </ul>
+  </div>
+ </nav>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="js/script.js"></script>
+
+
+   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #3f3f3f;
+    }
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  max-height: 320px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+
+.carousel-slide img {
+  width: 102%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 5;
+}
+.carousel-control.prev { left: 10px; }
+.carousel-control.next { right: 10px; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.carousel-indicators button[aria-current="true"] {
+  background: #fff;
+  opacity: 1;
+}
+
+
+.territorio-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 60px 5%;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+
+    .territorio-texto {
+      flex: 1;
+      min-width: 280px;
+      max-width: 400px;
+      order: 1;
+    }
+
+    .territorio-imagem {
+      max-width: 360px;
+      flex-shrink: 0;
+      order: 2;
+    }
+
+    .territorio-imagem img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .territorio-legenda {
+      flex: 1;
+      min-width: 200px;
+      max-width: 320px;
+      font-size: 0.85rem;
+      line-height: 1.25;
+      order: 3;
+      margin-top: 10%;
+    }
+
+    .territorio-texto h2 {
+      color: #f15a24;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .territorio-texto p {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+
+
+section {
+  padding: 60px 5%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.texto {
+  flex: 1 1 50%;
+  text-align: justify;
+}
+
+.imagem,
+.imagem1 {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.imagem1 img,
+.imagem img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #f47a35;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #f47a35;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Impacto */
+.impacto {
+  background-color: #f47a35;
+  color: white;
+  padding: 60px 5%;
+  text-align: center;
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+}
+
+.impacto h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.impacto .dados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.impacto .dados div {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.text{
+  color: #f15a24;
+  margin-left :40%;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+    .certificacoes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+
+    .certificacoes img {
+      max-width: 220px;
+      width: 100%;
+      height: auto;
+    }
+
+
+    @media (max-width: 768px) {
+ .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+        .certificacoes img {
+        max-width: 120px;
+      }
+
+  .texto {
+    flex: 1 1 100%;
+    text-align: justify;
+  }
+ .cert .text{
+ text-align: center;
+ margin-left: 0%;
+}
+
+
+  .imagem img,
+  .imagem1 img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .btn {
+    width: auto;
+    margin: 20px auto 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .impacto .dados {
+    flex-direction: column;
+    gap: 20px;
+  }
+      .territorio-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .territorio-texto,
+      .territorio-legenda {
+        max-width: 100%;
+        order: unset;
+      }
+
+      .territorio-texto h2 {
+        font-size: 1.5rem;
+      }
+
+      .territorio-texto p {
+        font-size: 0.95rem;
+      }
+
+      .territorio-legenda {
+        font-size: 0.9rem;
+      }
+        .carousel-slide img {
+          width: 100%;
+    height: 200px;
+  }
+}
+  </style>
+</head>
+<body>
+<header class="hero-carousel">
+  <div class="carousel-track" id="heroCarouselTrack">
+    <div class="carousel-slide">
+        <img data-desktop="img/inicioum.png" data-mobile="img/mobile3.png" alt="Banner Cáritas 1">
+    </div>
+    <div class="carousel-slide">
+       <img data-desktop="img/iniciodois.png" data-mobile="img/mobile1.png" alt="Banner Cáritas 1">
+    </div>
+    <div class="carousel-slide">
+      <img data-desktop="img/iniciotres.png" data-mobile="img/mobile2.png" alt="Banner Cáritas 1">
+    </div>
+    <div class="carousel-slide">
+       <img data-desktop="img/inicioquatro.png" data-mobile="img/mobile3.png" alt="Banner Cáritas 1">
+    </div>
+  </div>
+
+  <!-- Botões -->
+  <button class="carousel-control prev" aria-label="Anterior" data-dir="-1">‹</button>
+  <button class="carousel-control next" aria-label="Próximo" data-dir="1">›</button>
+
+  <!-- Indicadores -->
+  <div class="carousel-indicators" id="heroCarouselIndicators">
+    <button data-slide="0" aria-label="Slide 1" aria-current="true"></button>
+    <button data-slide="1" aria-label="Slide 2"></button>
+    <button data-slide="2" aria-label="Slide 3"></button>
+    <button data-slide="3" aria-label="Slide 4"></button>
+  </div>
+</header>
+
+  <section class="flex">
+    <div>
+        
+    </div>
+    <div class="texto">
+      <h2 class="section-title">Quem somos</h2>
+      <p>A Cáritas Campo Limpo é uma entidade de promoção e atuação social, sem fins lucrativos, constituída em 05 de junho de 1990, que trabalha na defesa dos direitos humanos, da segurança alimentar e do desenvolvimento sustentável solidário, junto aos excluídos e excluídas em defesa da vida e na participação da construção solidária de uma sociedade justa, igualitária e plural.</p>
+       <a href="html/historia.html"><button class="btn">SAIBA MAIS</button></a>
+    </div>
+    <div class="imagem1">
+      <img  src="img/fotoabraço.png" alt="Pessoas abraçadas">
+    </div>
+  </section>
+
+<section class="flex">
+  <div class="imagem imagem-meninos-container">
+    <img src="img/meninos.png" alt="Meninos sorrindo">
+  </div>
+    <div class="texto">
+      <h2 class="section-title">Participe ativamente no fortalecimento de vidas</h2>
+      <p>Defender a vida, promover a solidariedade e lutar por justiça social são princípios que movem a Cáritas. Acreditamos em um mundo com equidade, democracia participativa e protagonismo das pessoas em situação de vulnerabilidade. Junte-se a nós na construção da Sociedade do Bem Viver.</p>
+      <p><strong>Colabore com nossos projetos e faça parte da transformação!</strong></p>
+       <a href="html/doe.html"><button class="btn">QUERO APOIAR</button></a>
+    </div>
+</section>
+
+  <section class="impacto">
+    <h2>Nosso impacto</h2>
+    <div class="dados">
+      <div>35 Anos de história</div>
+      <div> 15.000 Beneficiários</div>
+      <div>78 Projetos conveniados</div>
+      <div>10 Projetos comunitários próprios</div>
+    </div>
+  </section>
+
+  <section class="territorio-container">
+  <div class="territorio-texto">
+    <h2>Território de atuação</h2>
+    <p>
+      Oferecemos atendimento gratuito às <strong>pessoas em situação de vulnerabilidade</strong> e riscos sociais da região de <strong>Campo Limpo, Butantã, M’Boi Mirim</strong>, da cidade de São Paulo.<br><br>
+      Também temos parcerias com as prefeituras dos municípios:
+      <strong>Taboão da Serra, Embu das Artes, Itapecerica da Serra, Embu-Guaçu, São Lourenço da Serra e Juquitiba</strong>.
+    </p>
+  </div>
+
+  <div class="territorio-imagem">
+    <img src="img/mapa.png" alt="Mapa de atuação Cáritas">
+  </div>
+
+  <div class="territorio-legenda">
+    <p>
+    <p style="color:orange" ><strong>⦁	São Paulo: Campo Limpo, Butantã e M’Boi Mirim</p> 
+    <p style="color:#461604" ><strong>• Taboão da Serra</p> 
+    <p style="color:#052977" ><strong>• Embu das Artes</p> 
+    <p style="color:#750b96" ><strong>• Itapecerica da Serra</p> 
+    <p style="color:red" ><strong>• Embu Guaçu</p> 
+    <p style="color:palevioletred" ><strong>• São Lourenço da Serra</p> 
+    <p style="color: green" ><strong>• Juquitiba</p>  
+    </p>
+  </div>
+</section>
+
+<section class="cert">
+  <div class="cert">
+    <h1 class="text" >Nossas Certificações</h1>
+  <div class="certificacoes">
+    <img src="img/Certificação_1.png" alt="Certificação 1">
+    <img src="img/Certificação_2.png" alt="Certificação 2">
+    <img src="img/Certificação_3.png" alt="Certificação 3">
+  </div>
+  </div>
+
+
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+function updateCarouselImages() {
+  const isMobile = window.innerWidth <= 768;
+  document.querySelectorAll('.carousel-slide img').forEach(img => {
+    const desktop = img.getAttribute('data-desktop');
+    const mobile = img.getAttribute('data-mobile');
+    img.src = isMobile && mobile ? mobile : desktop;
+  });
+}
+
+window.addEventListener('DOMContentLoaded', updateCarouselImages);
+window.addEventListener('resize', updateCarouselImages);
+
+
+  const track = document.getElementById('heroCarouselTrack');
+  const slides = Array.from(track.children);
+  const prevBtn = document.querySelector('.hero-carousel .prev');
+  const nextBtn = document.querySelector('.hero-carousel .next');
+  const indicators = document.getElementById('heroCarouselIndicators').children;
+  let current = 0;
+  const total = slides.length;
+
+  function goToSlide(index) {
+    current = (index + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    [...indicators].forEach((btn, i) =>
+      btn.setAttribute('aria-current', i === current ? 'true' : 'false')
+    );
+  }
+
+
+
+  document.querySelectorAll('.carousel-control').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const dir = parseInt(btn.getAttribute('data-dir'), 10);
+      goToSlide(current + dir);
+    });
+  });
+
+  [...indicators].forEach((btn, i) => {
+    btn.addEventListener('click', () => goToSlide(i));
+  });
+
+  // Autoplay
+  setInterval(() => {
+    goToSlide(current + 1);
+  }, 5000);
+
+  goToSlide(0);
+});
+</script>
+
+</body>
+</html>
+

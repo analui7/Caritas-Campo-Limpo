@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa História</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .banner-topo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #F47A35;
+      font-size: 1.5em;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 1rem;
+      margin-bottom: 1em;
+    }
+
+    strong {
+      color: #F47A35;
+    }
+
+    .intro-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .intro-text {
+      flex: 1 1 60%;
+      min-width: 280px;
+    }
+
+    .intro-images {
+      flex: 1 1 35%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      min-width: 140px;
+    }
+
+    .intro-image-block {
+      text-align: center;
+    }
+
+    .intro-image-block img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      display: block;
+      margin: 0 auto;
+    }
+
+    .caption {
+      font-size: 0.85em;
+      color: #555;
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+    .center-text {
+      text-align:justify;
+      margin-top: 40px;
+    }
+
+    .horizontal-images {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .horizontal-images div {
+      flex: 1 1 calc(33.333% - 10px);
+      min-width: 200px;
+      text-align: center;
+    }
+
+    .horizontal-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      display: block;
+      margin: 0 auto;
+    }
+
+    .final-buttons {
+      width: 100%;
+      padding: 40px 0;
+      text-align: center;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      margin-top: 60px;
+    }
+
+    .orange-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    h3 {
+      color: #ee7129;
+    }
+
+    .orange-button {
+      background-color: #F47A35;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.9em;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .orange-button:hover {
+      background-color: #d06526;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .intro-section {
+        flex-direction: column;
+      }
+
+      .intro-images {
+       
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .intro-image-block img {
+        max-width: 120px;
+      }
+
+      .horizontal-images {
+        flex-direction: column;
+      }
+
+      .horizontal-images div {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .orange-boxes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li><a href="atuação.html">Atuação</a></li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticia.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+  <script src="../js/script.js"></script>
+
+  <!-- Banner principal -->
+  <div class="banner-topo">
+    <img src="../img/Banners_história.jpg" alt="Banner Cáritas">
+  </div>
+
+  <div class="container">
+    <h2>Um nome, uma mensagem</h2>
+<br>
+    <div class="intro-section">
+      <div class="intro-text">
+        <p><strong style="color:#F47A35">“Cáritas”</strong>é uma palavra latina que significa <strong style="color:#F47A35">“amor” (caridade)</strong> . É a tradução da palavra grega “ágape” que ressoa no Novo Testamento com o significado de “amor livre”. O próprio Deus é amor (Deus caritas est). Sem amor, diz o apóstolo Paulo, “não sou nada”. A mensagem que a Cáritas transmite é clara: <strong style="color:#F47A35">só o amor (amar e ser amado) salva e dá sentido á vida</strong></p>
+
+        <h3>Tudo começou com apenas um homem</h3>
+
+        <p>De origem humilde na Alemanha, em 1897, Lorenz Werthmann fundou a primeira Cáritas. A organização cresceu e se tornou uma das maiores agências de ajuda humanitária e desenvolvimento do mundo.</p>
+
+        <p>Em 1954, a Caritas Internationalis foi oficialmente reconhecida e iniciou suas atividades respondendo a inundações na Itália, Holanda e Bélgica. Com o passar dos anos e por meio de ações efetivas, novas unidades foram sendo inauguradas e se juntando à missão de levar amor a quem sofre, coordenando operações para salvar vidas em países como Etiópia, China, Vietnã, Índia, Paquistão e nos grandes conflitos no Oriente Médio (Jerusalém, Jordânia e Síria), fornecendo auxílio a populações que enfrentavam a fome.</p>
+      </div>
+
+      <div class="intro-images">
+        <div class="intro-image-block">
+          <img src="../img/foto_1.png" alt="Lorenz Werthmann" />
+          <div class="caption">Lorenz Werthmann<br>Fundador da Cáritas Internationalis</div>
+        </div>
+        <div class="intro-image-block">
+          <img src="../img/foto_2.png" alt="Dom Hélder Câmara" />
+          <div class="caption">Dom Hélder Câmara<br>Fundador da Cáritas Brasileira</div>
+        </div>
+        <div class="intro-image-block">
+          <img src="../img/foto_3.png" alt="Oscar Romero" />
+          <div class="caption">Arcebispo Oscar Romero (El Salvador)<br>Voz de esperança e de denúncia contra a brutalidade sofrida pelo povo</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center-text">
+      <p>Em <strong style="color:#F47A35" >12 de novembro de 1956,</strong>  a Conferência Nacional dos Bispos do Brasil (CNBB) deu início à Cáritas Brasileira, uma das 170 organizações-membro da Cáritas Internationalis. Sua origem está na ação mobilizadora de Dom Helder Câmara, então Secretário-Geral da CNBB. As orientações do Concílio Vaticano II marcaram profundamente a atuação da Cáritas, que desde então vive sob os valores da pastoralidade transformadora. A Cáritas é um organismo da CNBB e possui uma rede com <strong style="color:#F47A35">198 entidades-membro, 13 regionais e 4 articulações. </strong> </p>
+
+      <p> Enquanto a Cáritas se adaptava à realidade brasileira, a instituição enfrentava desafios em todo o mundo, em países como Iraque, Sri Lanka e República Democrática do Congo, Funcionários e voluntários foram brutalmente assassinados ao denunciarem injustiças cometidas contra os pobres.</p>
+
+      <h2>Cáritas Campo Limpo</h2>
+      <p><strong>Somos Cáritas, Somos Solidariedade!</strong></p>
+
+      <p>Fundada em 05 de Junho de 1990, é uma entidade de promoção e atuação social, sem fins lucrativos, fundada por Dom Emílio Pignoli, é uma organização que trabalha na prática de gestos concretos junto às pessoas em situação de vulnerabilidade e exclusão social. Fazemos parte da Rede Cáritas Brasileira, que por sua vez é membro da Cáritas Internacional, presente em mais de 170 países, cabe dizer que os agentes Cáritas, contratados e voluntários, se envolvem na mobilização da sociedade para a construção de um mundo mais justo, inclusivo e igualitário, alicerçado na democracia participativa que luta e conquista direitos, elementos necessários para a dignidade humana e para o cuidado com a Casa Comum.</p>
+
+      <p><em>“A Cáritas para mim é mais que um lugar que tem a missão de defender, resgatar e promover vidas, ela possibilita a inclusão, dignidade e principalmente a proteção social de diversas crianças e adolescentes que com as vulnerabilidades diversas, perderam a esperança de sonhar.”</em><br><strong>— Cláudia dos Santos, gerente do CCA São José em Paraisópolis</strong></p>
+    </div>
+
+    <div class="horizontal-images">
+      <div><img src="../img/fotto_5.png" alt="Evento com crianças" /></div>
+      <div><img src="../img/foto_6.png" alt="Crianças sorrindo" /></div>
+      <div><img src="../img/foto_7.png" alt="Atividade comunitária" /></div>
+    </div>
+
+    <div class="center-text">
+      <p>São mais de 30 anos oferecendo atendimentos gratuitos às pessoas em situação de vulnerabilidades e riscos sociais na região de Campo Limpo, Butantã, M’Boi Mirim, da cidade de São Paulo. Também atende os municípios vizinhos: Taboão da Serra, Embu das Artes, Itapecerica da Serra, Embu-Guaçu, São Lourenço da Serra e Juquitiba.</p>
+
+      <p>A sede da Cáritas Campo Limpo é cedida pela Mitra Diocesana e conta com uma equipe administrativa que garante a missão da Organização. Técnicos dos recursos humanos, coordenação de projetos, dos serviços educacionais e socioassistenciais e das parcerias fazem parte dessa história.</p>
+    </div>
+
+    <div class="final-buttons">
+      <div class="orange-boxes">
+        <a href="missao.html"><div class="orange-button">Missão</div></a>
+        <a href="valores.html"><div class="orange-button">Valores</div></a>
+        <a href="principios.html"><div class="orange-button">Princípios Norteadores</div></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

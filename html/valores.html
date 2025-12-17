@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Valores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;0,900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="atuação.html">Atuação</a>
+        </li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticia.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+    <script src="../js/script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .topo {
+      position: relative;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .log{
+      width: 320px;
+    }
+
+
+    .titulo {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 2.8rem;
+      color: #e65100;
+      text-align: right;
+      line-height: 1.2;
+    }
+
+    .valores-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+    }
+
+    .valor {
+      flex: 1 1 48%;
+      box-sizing: border-box;
+    }
+
+    .valor h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #e65100;
+      margin-bottom: 8px;
+    }
+
+    .valor p {
+      text-align: justify;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .footer {
+      background-color: #e65100;
+      color: white;
+      position: relative;
+      padding: 80px 20px 50px;
+      margin-top: 80px;
+      overflow: hidden;
+    }
+
+    .footer::before {
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background-color: white;
+      border-bottom-left-radius: 100% 80px;
+      border-bottom-right-radius: 100% 80px;
+    }
+
+    .footer-content {
+      position: relative;
+      max-width: 1100px;
+      margin: 0 auto;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .botao {
+      background-color: white;
+      color: #e65100;
+      border: none;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .botao:hover {
+      background-color: #f5f5f5;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .topo {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .titulo {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 20px;
+      }
+
+      .valores-grid {
+        flex-direction: column;
+      }
+
+      .valor {
+        flex: 1 1 100%;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .footer h2 {
+        font-size: 1.6rem;
+      }
+
+      .botao {
+        align-self: center;
+        
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="topo">
+      <div ><img src="../img/nossosvalores.png"  class="log" alt="Logo"></div>
+    </div>
+
+    <div class="valores-grid">
+      <div class="valor">
+        <h3>Justiça e opção preferencial pelos pobres</h3>
+        <p>Guiados pelas Escrituras Cristãs, trabalhamos pela liberdade dos oprimidos, na luta para conseguir compartilhar de forma equitativa os bens da terra e ajudar os marginalizados a serem responsáveis pelo seu próprio desenvolvimento.</p>
+      </div>
+
+      <div class="valor">
+        <h3>Compaixão e Respeito</h3>
+        <p>A Caritas, unida como uma família humana, é sensível com o sofrimento dos outros e comove-se profundamente com o dever moral de responder ao sofrimento. Esse dever é essencial tanto para a nossa espiritualidade e identidade institucional como também pelo fato de sermos membros da família humana.</p>
+      </div>
+
+      <div class="valor">
+        <h3>Formação permanente</h3>
+        <p>Investimos em nosso pessoal para garantir que tenha as habilidades, experiências e formação continuada necessárias para expressar seu pleno potencial e crescer humana e profissionalmente.</p>
+      </div>
+
+      <div class="valor">
+        <h3>Solidariedade: Bem Comum e Casa Comum</h3>
+        <p>Trabalhamos com a sociedade civil e governos para proteger a dignidade humana e promover o bem de todos. Levamos em conta o meio ambiente e o legado para as futuras gerações em todas as nossas ações.</p>
+      </div>
+
+      <div class="valor">
+        <h3>Desenvolvimento Integral</h3>
+        <p>Nosso desenvolvimento é baseado na compreensão holística da pessoa, integrando dimensões espirituais, sociais, econômicas e culturais, buscando transformar sistemas sociais injustos.</p>
+      </div>
+
+      <!-- Princípios Norteadores -->
+      <div class="valor">
+        <h3>Centralidade na Pessoa Humana</h3>
+        <p>A dignidade da pessoa humana está no centro de todas as nossas ações. Valorizamos cada indivíduo como sujeito de direitos, respeitando sua história, cultura, espiritualidade e potencial transformador.</p>
+      </div>
+
+      <div class="valor">
+        <h3>Participação e Protagonismo</h3>
+        <p>Promovemos a participação ativa das comunidades e indivíduos nas decisões que afetam suas vidas, incentivando o protagonismo popular como caminho para a cidadania plena e o fortalecimento democrático.</p>
+      </div>
+
+      <div class="valor">
+        <h3>Transparência e Prestação de Contas</h3>
+        <p>Agimos com ética, clareza e responsabilidade na gestão dos recursos, das informações e dos resultados de nossas ações, prestando contas às comunidades, parceiros e à sociedade em geral.</p>
+      </div>
+
+      <div class="valor">
+        <h3>Incidência Política e Transformação Social</h3>
+        <p>Trabalhamos para influenciar políticas públicas que promovam justiça social e inclusão, atuando na construção de uma sociedade mais solidária, sustentável e democrática.</p>
+      </div>
+
+      <div class="valor">
+        <h3>Espiritualidade Libertadora</h3>
+        <p>Inspirados por uma fé comprometida com a justiça, cultivamos uma espiritualidade que une oração, ação e compromisso com os mais pobres, guiando nossas práticas com esperança e solidariedade.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content">
+      <h2>Princípios Norteadores</h2>
+      <a href="principios.html"><button class="botao">SAIBA MAIS</button></a>
+    </div>
+  </div>
+</body>
+</html>
+

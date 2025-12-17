@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nossas Campanhas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+     <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="atuação.html">Atuação</a>
+        </li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticia.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+    <script src="../js/script.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #3f3f3f;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .topo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+.titulo-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.titulo-imagem img {
+  max-width: 30%;
+  height: auto;
+}
+
+    .titulo h1 {
+      font-size: 32px;
+      color: #ef7f1a;
+    }
+
+
+    .subtitulo {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 0 20px;
+    }
+
+    .imagens-extras {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px 0;
+      padding: 0 20px;
+    }
+
+    .imagens-extras img {
+      height: 100px;
+      width: auto;
+      max-width: 180px;
+      object-fit: contain;
+    }
+
+    .secao {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .linha-curva {
+      position: absolute;
+      top: 40px;
+      bottom: 40px;
+      left: 50%;
+      width: 2px;
+      background: #ef7f1a;
+      z-index: 0;
+    }
+
+    .coluna {
+      position: relative;
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1 1 400px;
+      max-width: 480px;
+      z-index: 1;
+    }
+
+    .coluna h2 {
+      font-size: 20px;
+      color: #ef7f1a;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .passo {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+
+    .passo-numero {
+      background-color: #ef7f1a;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .passo-texto {
+      flex: 1;
+      font-size: 14px;
+    }
+
+    .destaque {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .duvidas {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ef7d1a7e;
+      color: #ef7f1a;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 600;
+      width: fit-content;
+      margin: 40px auto 20px;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .duvidas img {
+      height: 24px;
+      width: 24px;
+    }
+
+    .rodape {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .secao {
+        flex-direction: column;
+        padding: 20px 10px;
+      }
+
+      .linha-curva {
+        display: none;
+      }
+
+      .titulo h1 {
+        font-size: 24px;
+      }
+
+      .imagens-extras img {
+        height: 80px;
+      }
+
+      .duvidas {
+        font-size: 15px;
+        padding: 12px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topo">
+    <img src="../img/Banner_Nossas campanhas.png" alt="Nossas Campanhas" />
+  </div>
+
+ <div class="titulo-imagem">
+  <img src="../img/Notas Solidárias.png" alt="Notas Solidárias">
+</div>
+
+  <div class="subtitulo">
+    <p>Seus cupons fiscais emitidos <strong>COM CPF</strong> podem fazer a diferença!</p>
+    <p>Realize suas doações no site ou no aplicativo do programa Nota Fiscal Paulista.</p>
+    <p><strong>Sem gastar nada</strong> você pode contribuir com as ações sociais da Cáritas Campo Limpo!</p>
+  </div>
+
+  <div class="imagens-extras">
+    <img src="../img/Nota_Fiscal_Paulistaaa.png" alt="Logo Nota Fiscal Paulista" />
+    <img src="../img/meninos.png" alt="Imagem dos meninos" />
+  </div>
+
+  <div class="secao">
+    <div class="linha-curva"></div>
+
+    <div class="coluna">
+      <h2>Doação pelo aplicativo de celular:</h2>
+      <div class="passo"><div class="passo-numero">1º</div><div class="passo-texto">Baixe o aplicativo <span class="destaque">Nota Fiscal Paulista</span>;</div></div>
+      <div class="passo"><div class="passo-numero">2º</div><div class="passo-texto">Entre em sua conta, clique no menu do lado esquerdo e selecione: <span class="destaque">"Doação Cupom com CPF"</span>;</div></div>
+      <div class="passo"><div class="passo-numero">3º</div><div class="passo-texto">Escolha o período: <span class="destaque">Mensal</span> ou <span class="destaque">Anual</span>;</div></div>
+      <div class="passo"><div class="passo-numero">4º</div><div class="passo-texto">No campo de busca digite o CNPJ: <span class="destaque">64.033.061/0001-38</span></div></div>
+      <div class="passo"><div class="passo-numero">5º</div><div class="passo-texto">Ao aparecer o nome: <span class="destaque">CASA PADRE RAFAEL CENTRO EDUCAÇÃO INFANTIL</span>, clique na estrela para tornar favorita.</div></div>
+      <div class="passo"><div class="passo-numero">6º</div><div class="passo-texto">Clique em <span class="destaque">CONFIRMAR DOAÇÃO AUTOMÁTICA</span> e aguarde a confirmação do cadastro.</div></div>
+    </div>
+
+    <div class="coluna">
+      <h2>Doação pelo computador:</h2>
+      <div class="passo"><div class="passo-numero">1º</div><div class="passo-texto">Acesse o site: <span class="destaque">www.nfp.fazenda.sp.gov.br</span>;</div></div>
+      <div class="passo"><div class="passo-numero">2º</div><div class="passo-texto">Procure a aba <span class="destaque">"ENTIDADES"</span> e escolha a opção <span class="destaque">"Doação Cupom com CPF (automática)"</span>;</div></div>
+      <div class="passo"><div class="passo-numero">3º</div><div class="passo-texto">Vá em <span class="destaque">"PESQUISAR ENTIDADE"</span> e digite o CNPJ: <span class="destaque">64.033.061/0001-38</span></div></div>
+      <div class="passo"><div class="passo-numero">4º</div><div class="passo-texto">Aparecerá o nome: <span class="destaque">CASA PADRE RAFAEL CENTRO EDUCAÇÃO INFANTIL</span>, clique na estrelinha para favoritar.</div></div>
+      <div class="passo"><div class="passo-numero">5º</div><div class="passo-texto">Clique em <span class="destaque">CONFIRMAR DOAÇÃO AUTOMÁTICA</span> e aguarde a confirmação do cadastro.</div></div>
+    </div>
+  </div>
+
+  <!-- Botão de dúvidas -->
+  <a href="https://wa.me/5511940802384" target="_blank" class="duvidas">
+    <img src="../img/WhatsApp.png" alt="WhatsApp" />
+    Dúvidas? (11) 94080-2384
+  </a>
+
+
+</body>
+</html>

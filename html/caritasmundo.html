@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cáritas Mundo</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="atuação.html">Atuação</a>
+        </li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticia.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+    <script src="../js/script.js"></script>
+
+   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .descricao {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .logos a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .logos a:hover {
+      transform: scale(1.05);
+    }
+
+.logos img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.logos .mocambique{
+  width: 250px;
+}
+
+    @media (max-width: 768px) {
+      .logos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logos {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="../img/Banners_Caritasmundo.jpg" alt="Banner Cáritas Mundo">
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="container">
+    <div class="descricao">
+     <p>A Cáritas Internacional é uma confederação com mais de 170 organizações-membro. Está presente nos cinco continentes. Tem sua sede em Roma, de onde coordena operações de emergência, propõe políticas para corrigir as desigualdades e defende um mundo justo e solidário.</p>
+    </div>
+
+    <!-- Logos -->
+<div class="logos">
+  <a href="https://www.caritas.org/" target="_blank" class="img-brasileira">
+    <img src="../img/international.png" alt="Cáritas Internacional">
+  </a>
+
+  <a href="https://caritas.org.br/" target="_blank">
+    <img src="../img/caritasbrasil.png" alt="Cáritas Brasileira" >
+  </a>
+
+  <a href="https://caritaslatinoamerica.org/es" target="_blank"class="img-caribe">
+    <img src="../img/caribe.png" alt="Cáritas Caribe e América Latina" >
+  </a>
+
+  <a href="https://caritas.pt/" target="_blank">
+    <img src="../img/portuguesa.png" alt="Cáritas Portuguesa">
+  </a>
+
+  <a href="https://caritasangola.org/" target="_blank">
+    <img src="../img/angolaaa.jpg" alt="Cáritas Angola">
+  </a>
+
+  <a href="https://www.caritas.org/donde-trabajamos/africa/mozambique/?lang=es" target="_blank">
+    <img src="../img/mocambique.png" class="mocambique" alt="Cáritas Moçambique">
+  </a>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>

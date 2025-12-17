@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nossos Parceiros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+<link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .banner {
+      position: relative;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .titulo-banner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .grid-parceiros {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .grid-parceiros img {
+      width: 100%;
+      max-width: 160px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .titulo-banner {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+      }
+
+      .grid-parceiros img {
+        max-width: 120px;
+      }
+
+      .certificacoes img {
+        max-width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="atuação.html">Atuação</a>
+        </li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticia.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+    <script src="../js/script.js"></script>
+  <div class="banner">
+    <img src="../img/Banners_Nossos parceiros (1).jpg" alt="Nossos Parceiros">
+    <!-- opcional: título sobreposto -->
+    <!-- <div class="titulo-banner">Nossos Parceiros</div> -->
+  </div>
+
+  <div class="grid-parceiros">
+    <img src="../img/Parceiro_Diocese.png" alt="Diocese de Campo Limpo">
+    <img src="../img/Parceiro_SENAD.png" alt="SENAD">
+    <img src="../img/Parceiro_Banco do Brasil.png" alt="Banco do Brasil">
+    <img src="../img/Parceiro_Educação.png" alt="São Paulo Educação">
+    <img src="../img/Parceiro_Assistencia.png" alt="São Paulo Assistência">
+    <img src="../img/Parceiro_Inovação.png" alt="São Paulo Inovação">
+    <img src="../img/Parceiro_Juquitiba.png" alt="Juquitiba">
+    <img src="../img/Parceiro_Embu.png" alt="Embu das Artes">
+    <img src="../img/Parceiro_Taboão.png" alt="Taboão da Serra">
+  </div>
+  
+</body>
+</html>

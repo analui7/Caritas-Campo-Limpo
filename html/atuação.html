@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cáritas - Atuação</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="atuação.html">Atuação</a>
+        </li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticia.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+    <script src="../js/script.js"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .banner-topo {
+      background: url('../img/Banner_Atuação.png') no-repeat center center/cover;
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .banner-topo h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .descricao {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .descricao strong {
+      font-weight: 700;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card-atuacao {
+      flex: 1 1 300px;
+      height: 220px;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .card-atuacao h2 {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .card-atuacao {
+        height: 180px;
+      }
+
+      .banner-topo h1 {
+        font-size: 1.6rem;
+      }
+
+      .descricao {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner-topo">
+    
+  </div>
+
+  <!-- Texto explicativo -->
+  <div class="descricao">
+    <p>
+      A Cáritas Campo Limpo desenvolve ações voltadas à <strong>educação</strong>, à <strong>assistência social</strong> e a <strong>projetos comunitários próprios</strong>, sempre com foco na promoção da justiça social e da dignidade humana. Atuamos em parceria com as prefeituras em serviços socioassistenciais e educacionais, além de mantermos iniciativas independentes que fortaleçam a cidadania, a solidariedade e o protagonismo das comunidades. Nosso compromisso é construir caminhos de transformação para crianças, adolescentes, jovens e famílias em situação de vulnerabilidade social.
+    </p>
+  </div>
+
+  <!-- Cards de atuação -->
+  <div class="cards-container">
+    <a href="educacao.html" class="card-atuacao" style="background-image: url('../img/Educação.png');">
+     
+    </a>
+
+    <a href="assistencia.html" class="card-atuacao" style="background-image: url('../img/Assistência.png');">
+     
+    </a>
+
+    <a href="outrosProjetos.html" class="card-atuacao" style="background-image: url('../img/Outros projetos.png');">
+    
+    </a>
+  </div>
+
+</body>
+</html>

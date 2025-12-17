@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/logotipo_laranja.png" type="image/png">
+  <title>Assistência Social</title>
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <ul class="menu">
+        <li>
+          <a href="../index.html">A Cáritas</a>
+          <ul class="submenu">
+            <li><a href="historia.html">História</a></li>
+            <li><a href="missao.html">Missão</a></li>
+            <li><a href="valores.html">Valores</a></li>
+            <li><a href="principios.html">Princípios Norteadores</a></li>
+            <li><a href="caritasmundo.html">Cáritas mundo</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="atuação.html">Atuação</a>
+        </li>
+        <li>
+          <a href="voluntario.html">Como Apoiar</a>
+          <ul class="submenu">
+            <li><a href="voluntario.html">Seja um voluntário</a></li>
+            <li><a href="nossascampanhas.html">Nossas campanhas</a></li>
+            <li><a href="basarcaritas.html">Bazar Cáritas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Fique por Dentro</a>
+          <ul class="submenu">
+            <li><a href="../admin/exibir_noticia.php">Notícias</a></li>
+            <li><a href="../admin/exibir_editais.php">Editais e Vagas</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doe.html">Doe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+    <script src="../js/script.js"></script>
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- Estilo -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .banner {
+      text-align: center;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .content {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #333;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .highlight {
+      font-weight: 700;
+      color: #F47A35;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 40px;
+      color: #F47A35;
+    }
+
+    h1{
+      color: #F47A35;
+    }
+
+    h3{
+      color: #F47A35;
+    }
+    .footer {
+      background-color: #F47A35;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .footer-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 2.2rem;
+    }
+
+    .btn-saiba-mais {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: #fff;
+      color: #F47A35;
+      border: none;
+      padding: 10px 25px;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .botao {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #fff;
+      border: 2px solid #f26522;
+      color: #f26522;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .botao:hover {
+      background-color: #f26522;
+      color: #fff;
+    }
+
+    .botao i {
+      font-style: normal;
+    }
+
+    .btn-saiba-mais:hover {
+      background-color: #fff3ee;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .footer-title {
+        font-size: 1.2rem;
+      }
+
+      h1{
+      font-size: 20px;  
+      }
+      .btn-saiba-mais {
+        right: 10px;
+        bottom: 10px;
+        font-size: 14px;
+        padding: 8px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="../img/banner_assistenciasocial.jpg" alt="Banner Projetos ">
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="content">
+
+    <h1>Parcerias com a Secretaria Municipal de Assistência e Desenvolvimento Social (SMADS) - Prefeitura de São Paulo</h1>
+
+    <h3>Rede de Proteção Básica:</h3>
+    <h3>Centro para Crianças e Adolescentes (CCA)</h3>
+
+    <p>
+      Atende crianças e adolescentes de 6 a 14 anos e 11 meses, com atividades lúdicas, culturais e esportivas que promovem convivência, desenvolvimento e proteção social. Acolhe também crianças com deficiência, vítimas de trabalho infantil ou outras violações de direitos. Funciona de segunda a sexta, em dois turnos de 4 horas, com oferta de refeições em ambos os períodos.
+    </p>
+    <a href="https://drive.google.com/drive/folders/13QAz71xs9Q6cCL7BntT_S6176B4CFilr?usp=sharing" class="botao"><i>📄</i> 21 unidades</a>
+
+    <h3>Centro para Juventude (CJ)</h3>
+    <p>
+      Atende adolescentes de 15 a 17 anos em situação de vulnerabilidade, promovendo autonomia, convivência, retorno à escola e preparação para o mundo do trabalho. Funciona de segunda a sexta, em dois turnos de 4 horas, com oferta de alimentação
+    </p>
+   <a href="https://drive.google.com/drive/folders/16tcZLGVDE9tpwyP-yCAnGVI5CjUcIcJv?usp=sharing" class="botao"><i>📄</i> 02 Unidades </a>
+
+    <h3 class="section-title">Núcleo de Convivência de Idoso (NCI)</h3>
+    <p>
+      O NCI promove o envelhecimento ativo, saudável e autônomo por meio de atividades socioeducativas e acompanhamento domiciliar. As ações presenciais são planejadas conforme os interesses e necessidades dos idosos, fortalecendo vínculos familiares e comunitários, estimulando a convivência e a participação social. O serviço contribui para a melhoria da qualidade de vida, redução do isolamento e enfrentamento das vulnerabilidades sociais.
+    </p>
+    <a href="https://drive.google.com/drive/folders/1a354FUVfMnW8TXG8nS1Pi9e2s3d7xxgO?usp=sharing" class="botao"><i>📄</i>06 unidades </a>
+
+    <h3>Rede de Proteção Especial:</h3>
+    <h3>Serviço de Medidas Socioeducativas em Meio Aberto (MSE)</h3>
+    <p>Tem por finalidade oferecer atenção socioassistencial e acompanhamento a adolescentes e jovens de ambos os sexos em cumprimento de medidas socioeducativas em meio aberto – Liberdade Assistida  e Prestação de Serviços à Comunidade – determinadas judicialmente, conforme o artigo 112 do Estatuto da Criança e do Adolescente (ECA).</p>
+    <a href="https://drive.google.com/drive/folders/1iCfykCuacYJJBHF89lP5VT7UcIYm5r1L?usp=sharing" class="botao"><i>📄</i>03 unidades </a>
+ 
+       <h3>Rede de Proteção Especial:</h3>
+    <h3>Serviço de Acolhimento Institucional para Crianças e Adolescentes (SAICA)</h3>
+    <p>Serviço de Acolhimento Institucional para Crianças e Adolescentes (SAICA)
+Atende crianças e adolescentes de 0 a 17 anos e 11 meses em situação de risco, abandono ou cujas famílias estão temporariamente impossibilitadas de cuidar deles. O acolhimento é provisório, em ambiente semelhante ao familiar, com atendimento individualizado em pequenos grupos. Busca-se garantir proteção integral, fortalecer vínculos familiares e comunitários e facilitar o acesso a serviços locais. Sempre que possível, irmãos permanecem juntos. A estadia é temporária, até o retorno à família de origem ou inserção em família substituta</p>
+    
+      <h3>Parceria com o município de Taboão da Serra</h3>
+      <h3>Centro para Crianças e Adolescentes (CCA)</h3>
+      <p>Atende crianças e adolescentes de 6 a 14 anos e 11 meses, oferecendo um espaço de convivência, proteção e desenvolvimento por meio de atividades lúdicas, culturais e esportivas. Recebe também crianças com deficiência ou que tenham sofrido violações de direitos, promovendo o fortalecimento de vínculos e a prevenção de riscos sociais. O atendimento ocorre de segunda a sexta-feira, em dois turnos de 4 horas, com oferta de alimentação nos períodos.</p>
+      <br>
+      <p>1 Unidade </p>
+      <p>CCA São Pedro Apóstolo</p>
+      <p>Rua Maria Concessa de Medeiros, 280 - PQ. Pinheiros - Taboão da Serra</p>
+      <p>Telefone: (11) 4139-9335</p>
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+
+  </div>
+
+</body>
+</html>
